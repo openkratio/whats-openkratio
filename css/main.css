@@ -1,0 +1,207 @@
+@import url(http://fonts.googleapis.com/css?family=Bad+Script);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  background: #f2f2d8;
+  font-family: Calibri, Helvetica;
+  color: #f2f2d8;
+}
+.bespoke-parent {
+  -webkit-perspective: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+section {
+  width: 900px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -450px;
+  margin-top: -300px;
+  /*border-left: 10px solid #e00;*/
+  -webkit-transform: none;
+  opacity: 0;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+section.bespoke-slide {
+  -webkit-transition: all 0.7s ease;
+  opacity: 0;
+}
+section.bespoke-active {
+  opacity: 1;
+  -webkit-transition-delay: .3s;
+  z-index: 1;
+}
+section.bespoke-inactive {
+  opacity: 0;
+}
+section.bespoke-before {
+  -webkit-transform: translateY(-100%);
+  opacity: 0;
+  z-index: 2;
+}
+section.bespoke-after {
+  -webkit-transform: translateY(50%);
+}
+.slidebg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #3f4360;
+}
+.slidebg.main {  
+  background-color: #9e9e37;
+}
+.slidebg.vintage {
+    background-color: #A5867D;
+}
+.title {
+  position: absolute;
+  padding: 20px 20px;
+  font-size: 40px;
+  background-color: #9e9e37;
+  color: #fff;
+  text-shadow: 3px 3px 20px #000;
+  -moz-box-shadow: 2px 3px 20px #222;
+  -webkit-box-shadow: 2px 3px 20px #222;
+  box-shadow: 2px 3px 20px #222;
+}
+.section-vintage {
+    font-family: 'Bad Script', cursive;
+}
+.section-vintage .title {
+  background-color: #4D3C3A;
+  color: #D1D1D8;
+}
+.section-vintage .content {
+    color: #4D3C3A;
+}
+.keyword {
+  color: #9e9e37;
+}
+.content {
+  position: absolute;
+  bottom: 150px;
+  font-size: 40px;
+  left: 0;
+  padding-left: 40px;
+  margin-right: 20px;
+  line-height: 60px;
+}
+.content.down {
+    bottom: 75px;
+}
+.content.doubledown {
+    bottom: 20px;
+}
+.section-main .title-marked {
+    color: white;
+    position: absolute;
+    top: 20px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color: #3e4360;
+    font-size: 60px;
+    -moz-box-shadow: 2px 3px 20px #222;
+    -webkit-box-shadow: 2px 3px 20px #222;
+    box-shadow: 2px 3px 20px #222;
+}
+.section-inner{
+    content: '@OpenKratio #OKio';
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+    width: 200px;
+    background: url('../img/okio-tipo.png');
+}
+.section-main .center-block {
+    position: relative;
+    text-align: center;
+    line-height: 10px;
+}
+.section-main .center-block .text {
+    color: #3e4360;
+    font-size: 60px;
+    text-shadow: 1px 1px 10px #222;
+}
+
+.section-main .center-block .subtext {
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px 10px #3e4360;
+}
+
+.section-main .center-block img {
+    padding-top: 150px;
+    width: 150px;
+}
+
+.footer {
+    width: 900px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    background-color: #fff;
+}
+
+.footer img{
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+/*img {
+  position: absolute;
+  right: 0;
+}*/
+section img.okio {
+  position: absolute;
+  height: 400px;
+  top: 180px;
+  right: 20px;
+}
+section:nth-child(6) img.yeoman {
+  top: 235px;
+}
+section:nth-child(7) img.yeoman {
+  top: 213px;
+}
+section:nth-child(10) img.yeoman {
+  top: 212px;
+}
+section:nth-child(16) img.yeoman {
+  top: 190px;
+}
+section img.flip {
+  -webkit-transform: scaleX(-1);
+}
+.credits {
+  font-size: 7pt;
+  text-align: right;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+}
+a:visited,
+a:active,
+a:link,
+a:hover { 
+    color: #9e9e37;
+    text-decoration: none;
+}
+
