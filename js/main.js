@@ -1,1 +1,3 @@
-bespoke.vertical.from('article');
+bespoke.vertical.from('article', {
+  hash: true
+});
